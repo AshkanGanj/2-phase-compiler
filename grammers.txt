@@ -1,0 +1,16 @@
+List of grammers
+program --> {statement}
+statement --> "if_ganj" "(" comparison ")" ":""{" {statement}* "}" nl
+    | "if_ganj" "(" comparison ")" ":" "{" {statement}* "}"nl
+        "else_ganj" ":" "{"statement"}" nl
+    | "while_ganj" "->" "(" comparison ")" ":" "{" {statement}* "}" nl
+    | "for_ganj""(" forStatement ")" ":" "{" {statement} "}" nl
+    | "func_ganj" "identifire" "[" argomans "]" ":" "{" {statement}* "}" nl
+    | "identifre" "(" expression* ")" nl
+    | "identifire" "<=>" expression nl
+comparison --> expression ("<==>" | ">" | "<" ) expression
+expression --> term {( "--" | "++" ) term}
+term --> primary  {( "/\" | "*" ) primary }
+primary --> number | identifire
+argomanse --> "["identifire"comma")*identifire"]"|Lynda
+forStatement --> {"identifire" "<=>" expression"comma"expression"comma"comparison}

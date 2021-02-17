@@ -1,0 +1,24 @@
+
+ganj_ad<=>ganj_index ++1
+ganj_a <=> 2++3
+if_ganj(ganj_a <==> 2):{
+    ganj_a <=> 3
+}else_ganj:{
+    ganj_a <=> 5++4--2
+}
+while_ganj(ganj_a <==> 34):{
+    ganj_a <=> ganj_a /\ 3
+    ganj_a <=> 12.34 * 23
+    ganj_a <=> 12. * 23
+    ganj_a <=> 12 * 23
+    ganj_a <=> .32 * 23
+}
+for_ganj(ganj_1a45 <=> 121,ganj_1a45 /\ 1,ganj_1a45 > 343):{
+    ganj_a <=> 4
+    ganj_b <=> 12
+}
+func_ganj ganj_11adsf4[ganj_a,ganj_3,ganj_sd]:{
+    ganj_a <=> ganj_a /\ 3
+    ganj_a <=> 12.34 * 23
+}
+ganj_11adsf4(ganj_x, 234++5)
